@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  jenkins_runner:
+    container_name: jenkins_runner
+    image: jenkins/jenkinsfile-runner
+    volumes:
+    - /Users/diego/Documents/github/jenkins-node/Jenkinsfile:/workspace/Jenkinsfile
+    - /Users/diego/Documents/github/jenkins-node/app:/workspace/app
